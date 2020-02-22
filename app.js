@@ -1,14 +1,15 @@
-const express = require('express')
+const express = require('express');
+const authRouter = require('./routes/auth-routes');
 
 const app = express();
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('home')
-})
+});
 
 app.listen(3000, () => {
     console.log("App now listening for request on port 3000.")
-})
+});
 
