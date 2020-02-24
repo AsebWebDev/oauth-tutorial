@@ -1,5 +1,6 @@
 // const dotenv = require('dotenv')
 require('dotenv').config()
+const passportSetup = require('./config/passport-setup')
 const express = require('express');
 const authRoutes = require('./routes/auth-routes');
 
