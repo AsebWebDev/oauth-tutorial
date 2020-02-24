@@ -1,8 +1,13 @@
+// const dotenv = require('dotenv')
+require('dotenv').config()
 const express = require('express');
 const authRoutes = require('./routes/auth-routes');
 
 const app = express();
+console.log(process.env.CLIENT_SECRET)
+console.log("test")
 
+// dotenv.config();
 
 //set up view enginge
 app.set('view engine', 'ejs');
